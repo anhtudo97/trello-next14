@@ -4,9 +4,12 @@ import React from 'react';
 const OrganizationIdPage = () => {
     return (
         <div>
-            <OrganizationSwitcher
+
+            Organization id page
+
+            {/* <OrganizationSwitcher
                 hidePersonal
-            />
+            /> */}
 
         </div>
     );

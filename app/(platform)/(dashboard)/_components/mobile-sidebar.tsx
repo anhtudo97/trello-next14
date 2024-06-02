@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent } from '@/components/ui/sheet';
 import { useMobileSidebar } from '@/hooks/use-mobile-sidebar';
@@ -7,10 +9,8 @@ import React, { useEffect, useState } from 'react';
 import Sidebar from './sidebar';
 
 const MobileSidebar = () => {
-
     const pathname = usePathname();
     const [isMounted, setIsMounted] = useState(false);
-
     const { isOpen, onClose, onOpen } = useMobileSidebar();
 
     useEffect(() => {
@@ -43,8 +43,8 @@ const MobileSidebar = () => {
                     side={'left'}
                     className="p-2 pt-10"
                 >
-                    <Sidebar 
-                    storageKey="t-sidebar-mobile-state"
+                    <Sidebar
+                        storageKey="t-sidebar-mobile-state"
                     />
                 </SheetContent>
             </Sheet>

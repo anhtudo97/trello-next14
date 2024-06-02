@@ -11,6 +11,7 @@ const Navbar = () => {
             {/* Mobile sidebar */}
 
             <MobileSidebar />
+            
             <div className="flex items-center gap-x-4">
                 <div className="hidden md:flex">
                     <Logo />
@@ -18,7 +19,7 @@ const Navbar = () => {
                 <Button variant={'primary'} size={"sm"} className="rounded-sm hidden md:block h-auto py-1.5 px-2">
                     Create
                 </Button>
-                <Button variant={'primary'} size={"sm"} className="rounded-sm block md:hidden h-auto">
+                <Button variant={'primary'} size={"sm"} className="rounded-sm block md:hidden">
                     <Plus className="size-4" />
                 </Button>
             </div>
