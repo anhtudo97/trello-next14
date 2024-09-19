@@ -9,7 +9,7 @@ export function cn(...inputs: ClassValue[]) {
 
 
 export const headingFont = localFont({
-  src: "../../public/fonts/font.woff2"
+  src: "../public/fonts/font.woff2"
 });
 
 export const textFont = Poppins({
